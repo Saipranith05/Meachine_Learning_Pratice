@@ -31,16 +31,5 @@ Operating_System = ("Operating System(0:Android, 1:iOS)", [0,1])
         #    Operating_System = st.text_input("Operating System")
 
 
-if st.button("predict"):
-    # Create an array of features for prediction
-    features = np.array([[User_ID, Device_Model, App_Usage_Time, 
-                          Screen_On_Time, Battery_Drain, 
-                          Number_of_Apps_Installed, Data_Usage, 
-                          Age, User_Behavior_Class, 
-                          Operating_System]])
-    
-    try:
-        result = model.predict(features)
-        st.write("Prediction:", result)
-    except Exception as e:
-        st.error(f"An error occurred during prediction: {e}")
+if st.button('predict'):
+    user_data = np.array([[User_ID, Device_Model, App_Usage_Time, Screen_On_Time, Battery_Drain, Number_of_Apps_Installed, Data_Usage, Age, User_Behavior_Class, Operating_System]])
