@@ -5,6 +5,7 @@ import numpy as np
 model = joblib.load("Mobiles.pkl")
 
 st.title("App of Prediction")
+st.image("WhatsApp.jpeg")
 
 
 user_id = st.number_input("Please enter your ID:")
