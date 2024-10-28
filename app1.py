@@ -29,4 +29,4 @@ if st.button('predict'):
     output = model.predict(features)
     
     # Display the prediction result
-    st.write(f" The Predict: {'Male' if output == 1 else 'Female'}")
+    st.write(f"Gender Prediction: {'Male' if output == 1 else 'Female'}")
