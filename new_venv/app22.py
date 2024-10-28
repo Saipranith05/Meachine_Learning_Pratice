@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import joblib
 
-import joblib
 model = joblib.load(r"C:\Users\Akshitha\New folder\Meachine_learning_pratice\new_venv\Exam_Score.pkl")
 
 st.title("Exam Score PredictHours_Studied")

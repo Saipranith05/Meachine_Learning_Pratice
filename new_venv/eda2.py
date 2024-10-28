@@ -2,10 +2,13 @@ import streamlit as st
 import numpy as np
 import joblib
 
-import joblib
+
 model = joblib.load(r"C:\Users\Akshitha\New folder\Meachine_learning_pratice\new_venv\Exam_Score.pkl")
 
 st.title("Exam Score PredictHours_Studied")
+import streamlit as st
+st.title("Streamlit Test App")
+st.write("Hello, this is a test app!")
 
 Hours_Studied = st.number_input("Please enter no.of Hours Studied:")
 Attendance = st.number_input("Please enter your Attendance:")
